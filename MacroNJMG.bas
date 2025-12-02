@@ -51,7 +51,7 @@ Sub MacroNJMG
     Dim isTarget            As Boolean
     Dim blankCount          As Integer
 
-    ' --- DeclaraÃ§Ãµes para bloco 10 (â€œBelo Horizonte, aos â€¦;â€) ---
+    ' --- Declaracoes para bloco 10 (Belo Horizonte, aos â€¦;â€) ---
     Dim dateParas()         As Object
     Dim dpEnum              As Object
     Dim hp2                 As Object
@@ -60,7 +60,7 @@ Sub MacroNJMG
     Dim blanksBelow         As Integer
     Dim sUP                 As String
 
-    ' InicializaÃ§Ã£o
+    ' Inicializacao
     document   = ThisComponent.CurrentController.Frame
     dispatcher = createUnoService("com.sun.star.frame.DispatchHelper")
     dispatcher.executeDispatch(document, ".uno:GoToStartOfDoc", "", 0, Array())
@@ -732,4 +732,5 @@ Sub MacroNJMG
 		Next m
 
 		IsDateLineLocalData = False
+
 	End Function
